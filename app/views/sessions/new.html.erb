@@ -1,0 +1,10 @@
+<!-- <h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p> -->
+
+<h1>Log in, Brosif!</h1>
+
+<%= form_for @user, :url => { :controller => "sessions", :action => "create"} do |f| %> 
+	Email: <%= f.text_field :email %> <br />
+	Password: <%= f.password_field :password %> <br />
+	<%= f.submit "Log in now!"%>
+<% end %> 
